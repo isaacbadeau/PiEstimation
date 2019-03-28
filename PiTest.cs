@@ -9,7 +9,7 @@ namespace PiEstimation
     class PiTest
     {
 
-        public Coords[] RandomCoors(int arraySize)
+        public Coords[] RandomCoords(int arraySize)
         {
             var coords = new Coords[arraySize];
             var random = new Random();
@@ -45,7 +45,7 @@ namespace PiEstimation
         
         public double CalcPi(int number)
         {
-            var rndCoors = RandomCoors(number);
+            var rndCoors = RandomCoords(number);
             var circleOverlap = OverlapCounter(rndCoors);
 
             return circleOverlap / rndCoors.Length * 4;
